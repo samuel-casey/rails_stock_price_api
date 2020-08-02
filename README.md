@@ -42,9 +42,13 @@ Answer the following questions:
 
 * Can you make your API 'self-evident'? Meaning, your API requires little explanation for an end-user?
 
-**Bonus research:**
+**Bonus: Nested Routes:**
 
 * Do you want nested routes?
+
+**Bonus: Charting:**
+
+Try using chart.js to display the data as a line or bar chart. 
 <br>
 
 ## :dart: **When you think you know the answers to these questions, build your API.**
