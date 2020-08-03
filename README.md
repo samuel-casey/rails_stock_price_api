@@ -4,7 +4,7 @@
 
 Title: Rails API one-to-many lab<br>
 Type: Lab<br>
-Duration: 45+ mins<br>
+Duration: 1hr+ mins<br>
 Creator: Thom Page <br>
 Topics: Rails 5 API, One-to-many relationships<br>
 
