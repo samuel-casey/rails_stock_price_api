@@ -42,9 +42,9 @@ Answer the following questions:
 
 * Can you make your API 'self-evident'? Meaning, your API requires little explanation for an end-user?
 
-**Bonus: Nested Routes:**
+**Nested Routes:**
 
-* Do you want nested routes?
+* Use nested routes
 
 **Bonus: Charting:**
 
