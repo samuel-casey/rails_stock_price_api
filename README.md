@@ -30,20 +30,20 @@ Answer the following questions:
 
 * What is the relation between **average prices** and **stocks**?
 
-  - stock has one average price
-  - average price has many stocks
+  - stock has many average prices
+  - average price has one stock
 
 * What **columns** would you want for your tables?
 
   - stocks
-    - id, symbol, average_price_id
+    - id, symbol
 
   - average price
-    - id, USD 
+    - id, price_USD, date, stock_id 
 
 * Does one of your tables get a **foreign key** column? If so, which?
 
-  - stocks gets the foreign key of an average price
+  - average_price gets the foreign key of a stock
 
 <br>
 
@@ -55,11 +55,12 @@ Answer the following questions:
 * What **routes** do you want your API to have?
 
   - GET stocks
-  - GET average_price
+  - GET, POST average_price
 
 * What **actions** will your controller need, given your routes?
 
   - index, show
+  - index, create
 
 <br>
 
@@ -69,7 +70,7 @@ Answer the following questions:
 
 * Use nested routes
 
-  - /average_prices/:average_price_id/stocks
+  - /stocks/:id/average_price
 
 **Bonus: Charting:**
 
