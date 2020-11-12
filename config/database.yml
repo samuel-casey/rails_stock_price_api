@@ -20,6 +20,9 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  port: 5432
+  user: test
+  password: test
 
 development:
   <<: *default
@@ -80,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: avg_stock_price_api_production
-  username: avg_stock_price_api
-  password: <%= ENV['AVG_STOCK_PRICE_API_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>

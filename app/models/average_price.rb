@@ -1,0 +1,2 @@
+class AveragePrice < ApplicationRecord
+end
