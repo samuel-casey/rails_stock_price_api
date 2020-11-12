@@ -59,7 +59,7 @@ Answer the following questions:
 
 * What **actions** will your controller need, given your routes?
 
-- index, show
+  - index, show
 
 <br>
 
@@ -68,6 +68,8 @@ Answer the following questions:
 **Nested Routes:**
 
 * Use nested routes
+
+  - 
 
 **Bonus: Charting:**
 
