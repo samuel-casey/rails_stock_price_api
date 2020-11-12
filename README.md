@@ -6,6 +6,8 @@ Duration: 1hr+ mins<br>
 Creator: Thom Page <br>
 Topics: Rails 5 API, One-to-many relationships<br>
 
+FRONTEND: https://github.com/samuel-casey/rails-stock-api-frontend
+
 ---
 
 ## :clock930: Rails API one-to-many lab
