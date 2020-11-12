@@ -23,39 +23,39 @@ Answer the following questions:
 <br>
 
 * What **models** will you need? Why?
-- stock
-- average price
+  - stock
+  - average price
 
 <br>
 
 * What is the relation between **average prices** and **stocks**?
 
-- stock has one average price
-- average price has many stocks
+  - stock has one average price
+  - average price has many stocks
 
 * What **columns** would you want for your tables?
 
-- stocks
-  - id, symbol, average_price_id
-  
-- average price
-  - id, USD 
+  - stocks
+    - id, symbol, average_price_id
+
+  - average price
+    - id, USD 
 
 * Does one of your tables get a **foreign key** column? If so, which?
 
-- stocks gets the foreign key of an average price
+  - stocks gets the foreign key of an average price
 
 <br>
 
 * What **controllers** will you need?
 
-- stocks_controller
-- average_price_controller
+  - stocks_controller
+  - average_price_controller
 
 * What **routes** do you want your API to have?
 
-- GET stocks
-- GET average_price
+  - GET stocks
+  - GET average_price
 
 * What **actions** will your controller need, given your routes?
 
