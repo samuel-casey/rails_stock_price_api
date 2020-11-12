@@ -5,13 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 Stock.create([
-{symbol: 'AAPL', average_price_id: 1},
-{symbol: 'GOOG', average_price_id: 1},
-{symbol: 'TSLA', average_price_id: 2}
+    {symbol: 'AAPL'},
+    {symbol: 'TSLA'},
+    {symbol: 'GOOG'}
 ])
 
-# AveragePrice.create([
-#     {price_USD: 100},
-#     {price_USD: 200}
-# ])
+AveragePrice.create([
+    {price_USD: 150, date: '2020/11/12', stock_id: 1},
+    {price_USD: 145, date: '2020/11/11', stock_id: 1},
+    {price_USD: 155, date: '2020/11/10', stock_id: 1},
+    {price_USD: 100, date: '2020/11/12', stock_id: 3},
+    {price_USD: 105, date: '2020/11/11', stock_id: 3},
+    {price_USD: 115, date: '2020/11/10', stock_id: 3},
+    {price_USD: 900, date: '2020/11/12', stock_id: 2},
+    {price_USD: 1005, date: '2020/11/11', stock_id: 2},
+    {price_USD: 1025, date: '2020/11/10', stock_id: 2},
+])

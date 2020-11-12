@@ -12,7 +12,7 @@ class StocksControllerTest < ActionDispatch::IntegrationTest
 
   test "should create stock" do
     assert_difference('Stock.count') do
-      post stocks_url, params: { stock: { average_price_id: @stock.average_price_id, symbol,: @stock.symbol, } }, as: :json
+      post stocks_url, params: { stock: { symbol: @stock.symbol } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class StocksControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update stock" do
-    patch stock_url(@stock), params: { stock: { average_price_id: @stock.average_price_id, symbol,: @stock.symbol, } }, as: :json
+    patch stock_url(@stock), params: { stock: { symbol: @stock.symbol } }, as: :json
     assert_response 200
   end
 

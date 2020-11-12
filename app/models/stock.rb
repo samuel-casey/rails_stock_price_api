@@ -1,3 +1,3 @@
 class Stock < ApplicationRecord
-    belongs_to :average_price
+    has_many :average_prices
 end

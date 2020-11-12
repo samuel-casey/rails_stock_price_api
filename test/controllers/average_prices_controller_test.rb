@@ -12,7 +12,7 @@ class AveragePricesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create average_price" do
     assert_difference('AveragePrice.count') do
-      post average_prices_url, params: { average_price: { price_USD: @average_price.price_USD } }, as: :json
+      post average_prices_url, params: { average_price: { date: @average_price.date, price_USD: @average_price.price_USD } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class AveragePricesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update average_price" do
-    patch average_price_url(@average_price), params: { average_price: { price_USD: @average_price.price_USD } }, as: :json
+    patch average_price_url(@average_price), params: { average_price: { date: @average_price.date, price_USD: @average_price.price_USD } }, as: :json
     assert_response 200
   end
 
