@@ -69,7 +69,7 @@ Answer the following questions:
 
 * Use nested routes
 
-  - 
+  - /average_prices/:average_price_id/stocks
 
 **Bonus: Charting:**
 
