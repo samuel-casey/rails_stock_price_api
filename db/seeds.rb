@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Stock.create([
+{symbol: 'AAPL', average_price_id: 1},
+{symbol: 'GOOG', average_price_id: 1},
+{symbol: 'TSLA', average_price_id: 2}
+])
+
+# AveragePrice.create([
+#     {price_USD: 100},
+#     {price_USD: 200}
+# ])
