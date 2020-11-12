@@ -46,6 +46,6 @@ class StocksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def stock_params
-      params.require(:stock).permit(:symbol,, :average_price_id)
+      params.require(:stock).permit(:symbol, :average_price_id)
     end
 end
