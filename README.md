@@ -1,57 +1,14 @@
----
+## About
 
-Title: Rails API one-to-many lab<br>
-Type: Lab<br>
-Duration: 1hr+ mins<br>
-Creator: Thom Page <br>
-Topics: Rails 5 API, One-to-many relationships<br>
+A basic stock price API built with Ruby on Rails and Postgresql in 3 hours as part of a General Assembly bootcamp. Allows a user to view and create average stock prices for a user from the command line or via the rails console or Postman. 
 
-FRONTEND: https://github.com/samuel-casey/rails-stock-api-frontend
-
----
-
-## :clock930: Rails API one-to-many lab
-
-* **PLAN A BACKEND API THAT HAS A ONE-TO-MANY RELATIONSHIP**
-
-### :memo: DATA-MODELING AND DESIGNING AN API
-
-Your boss wants you to design and build an API. The API is going to deliver some data about the **average share prices** for saleable **stocks** on the stock market. 
-
-You know you will be dealing with **average prices** and **stocks**, and that the two things are related.
-
-Answer the following questions:
-
-<br>
-
-* What **models** will you need? Why?
-  - stock
-  - average price
-
-<br>
-
-* What is the relation between **average prices** and **stocks**?
-
-  - stock has many average prices
-  - average price has one stock
-
-* What **columns** would you want for your tables?
-
-  - stocks
-    - id, symbol
-
-  - average price
-    - id, price_USD, date, stock_id 
-
-* Does one of your tables get a **foreign key** column? If so, which?
-
-  - average_price gets the foreign key of a stock
-
-<br>
+Also built a very simple React frontend for viewing the api's data that uses chart.js, which can be found here:
+https://github.com/samuel-casey/rails-stock-api-frontend
 
 ### Data Model
 
-![entity relationship diagram]('./ERD%20for%20ruby_stock_price_api.png')
+![entity relationship diagram](ruby_stock_price_API_ERD.png)
+
 ### Routing Table
 
 | Controller     | Route                            | HTTP Method | DB Action | Description                                |
@@ -61,15 +18,14 @@ Answer the following questions:
 | average_prices | /stocks/:stock_id/average_prices | POST        | CREATE    | Add a new stock price for a specific stock |
 | average_prices | /average_prices                  | GET         | INDEX     | Get all average_prices for stocks          |
 
-  - index, show
-  - index, create
+### Instructions for using the API
 
-<br>
+1) Fork and clone this repository
+   
+2) Open up a new terminal and `cd` into the directory in which you saved the repository
+   
+3) run `bundle e rails db:setup && rails db:migrate` to set up & migrate the database based on the database.yaml, Gemfile, and migration files
+   
+4) run `rails s` to start the rails server locally
 
-* Can you make your API 'self-evident'? Meaning, your API requires little explanation for an end-user?
-
-**Nested Routes:**
-
-* Use nested routes
-
-  - /stocks/:id/average_price
+5) either fork and clone the [frontend repository](https://github.com/samuel-casey/rails-stock-api-frontend) and run `npm start` to view the frontend for this project, or interact with it through the rails console or Postman
