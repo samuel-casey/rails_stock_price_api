@@ -7,7 +7,7 @@ https://github.com/samuel-casey/rails-stock-api-frontend
 
 ### Data Model
 
-![entity relationship diagram](rails_stock_price_API_ERD.png)
+![entity relationship diagram](rails_stock_price_api_ERD.png)
 
 ### Routing Table
 
